@@ -2,7 +2,7 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { User } from "../models/user.models.js";
 import { ApiError } from "../utils/ApiError.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 const generateAndAccessTokens = async (userId) => {
     try {
